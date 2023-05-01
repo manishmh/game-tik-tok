@@ -1,0 +1,38 @@
+.carousel {
+    overflow: hidden;
+    height: auto;
+}
+
+.inner {
+    white-space: nowrap;
+    transition: transform 0.3s
+}
+
+.carousel-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.indicators {
+
+}
+
+.chevron {
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+.chevron-left {
+    left: 2rem;
+}
+
+.chevron-right {
+    right: 2rem;
+}

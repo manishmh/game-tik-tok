@@ -1,0 +1,267 @@
+:root {
+  --banner-padding: 15px;
+}
+
+.carousel-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 1rem;
+  height: 100%;
+}
+
+.carousel {
+  width: 93vw;
+  height: 22vh;
+  position: relative;
+  margin-top: var(--banner-padding);
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  top: calc(50% - var(--banner-padding));
+}
+
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
+  right: 1rem;
+}
+
+.gamify-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem;
+}
+
+.gamify-image > img {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 1rem;
+}
+
+.gamify-des h2 {
+  color: white;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.gamify-des p {
+  color: white;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.socials {
+  display: flex;
+  gap: 2rem;
+  color: #05FF00
+}
+
+.game-names {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  overflow-x: auto;
+  margin-left: 1rem;
+  max-width: 1000px;
+}
+
+
+.game-names::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.game-names p, .game-names button{
+  background-color: rgb(22, 22, 22);
+  padding: 10px 20px;
+  border-radius: 1rem;
+  width: 100%;
+  font-size: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.game-names > button {
+  background-color: white;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+}
+.tired {
+  margin: 0 1rem;
+}
+
+.tired p {
+  color: white
+}
+
+.tired span {
+  font-size: 13px;
+}
+
+.controller {
+  color: white;
+  margin-left: 5px;
+}
+
+.heart {
+  color: #05FF00;
+  margin-left: 5px;
+}
+
+.register {
+  display: flex;
+  margin: 0 2rem;
+  gap: 1rem;
+}
+
+.pre-register, .join {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px 15px;
+  border-radius: 1rem;
+  width: 50%;
+  white-space: nowrap;
+  max-width: 200px;
+}
+
+.join {
+  background-color: white;
+  color: black
+}
+
+.register-creator-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.register-creator {
+  margin: 1.5rem 1rem;
+  width: 90%;
+  text-align: center;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  padding: 8px 0; 
+  background-color: #05FF00; 
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.register-creator span {
+  font-size: 15px;
+  margin-top: 5px;
+}
+
+.scroll-images {
+  display: flex; 
+  gap: 1rem;
+  margin: 1rem;
+  overflow: auto;
+}
+
+.scroll-images > img {
+  width: 200px;
+  border-radius: 1.5rem;
+  border: 3px solid white
+}
+
+.scroll-images::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+.about {
+  margin: 0 1rem;
+  color: rgb(146, 146, 146) 
+}
+
+.about h2 {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.about p {
+  font-size: 16px;
+}
+
+.why-pre {
+  margin: 3rem 1rem;
+  color: rgb(146, 146, 146) 
+}
+
+.why-pre h2 {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.mont {
+  font-size: 13px;
+}
+
+.mont-son {
+  background-color: rgb(40, 40, 40);
+  color: white;
+}
+
+.beta-seats {
+  margin: 1rem;
+  color: white;
+}
+
+.beta-seats-son {
+  display: flex;
+  gap: 1rem;
+}
+
+.beta-seats-son > div {
+  background-color: rgb(62, 62, 62);
+  padding: 10px 20px;
+  border-radius: 1rem;
+}
+
+.mont {
+  max-width: 800px;
+}
+
+.mont > div {
+  background-color: rgb(0,0,0,0.5);
+  color: white;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .gamify-container, .game-names, .tired, .register {
+    margin-left: 3rem;
+  }
+}
